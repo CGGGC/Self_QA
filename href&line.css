@@ -1,0 +1,14 @@
+#id_00 {
+    height: 100px;
+}
+
+/*
+a[href] {
+    text-decoration-line: none;
+}
+*/
+
+#id_00 a {
+    text-decoration-line: none;
+    color: black;
+}
