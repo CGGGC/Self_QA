@@ -1,0 +1,17 @@
+/*부모에게만 적용됨*/
+#par_00 {
+    float: left;
+}
+
+/*근데 이거는 왜 안되는거야?????*/
+#par_00[id*=child_] {
+    float: left;
+}
+
+/*따라서 각 자식 div 요소에 float 를 적용해줄 것*/
+#child_00,
+#child_01,
+#child_02,
+#child_03 {
+    float: left;
+}
