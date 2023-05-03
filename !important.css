@@ -1,0 +1,21 @@
+/*이 연결 선택자가 우선순위가 되는 이유는 단순히 선택자의 개수가 더 많기 때문이다.*/
+#head_00 [id*=main] {
+    background-color: rgb(68, 68, 151);
+    color: white;
+
+    margin: 20px 20px;
+    text-align: center;
+}
+
+/*여기서 main_02가 바뀌지 않는다고 important를 남용하게 되면*/
+/*코드가 길어질 때 협업하는 이들은 important를 찾지 못할 것이다.*/
+/*되도록이면 지양하되, 꼭 넣어야할 경우에는 제대로 표시해주자*/
+/*
+#main_02 {
+    background-color: red !important;
+}
+*/
+
+#main_03 {
+    background-color: red;
+}
