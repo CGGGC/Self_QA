@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>왜 속성 선택자를 사용해도 각각의 div 요소에 css가 적용되지 않을까?</title>
+    <link rel="stylesheet" href="연결&속성선택자.css">
+</head>
+
+<!--내가 하고싶은 건 main_00~main_03 마다 float: left 를 적용시키고 싶은 것이다.-->
+<!--#head_00[id*=main] {} 를 해도 적용되지 않는 문제점에 직면-->
+
+<!--근데 띄어쓰기 하나에 해결되었다-->
+<!--#head_00 [id*=main] {} 와 같이 연결 선택자를 생각해서 속성선택자와 응용시키면 된다.-->
+<!--세상에나,, 세상에나,, 이리 간단한 걸,,-->
+<div id="head_00">
+
+    <body>
+        <div id="main_00">main_00</div>
+        <div id="main_01">main_01</div>
+        <div id="main_02">main_02</div>
+        <div id="main_03">main_03</div>
+    </body>
+</div>
+
+</html>

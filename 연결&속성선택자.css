@@ -1,0 +1,10 @@
+/* 이렇게 하면 안된다
+#head_00[id*=main] {
+    float: left;
+}
+*/
+
+/*이렇게 할 것*/
+#head_00 [id*=main] {
+    float: left;
+}
