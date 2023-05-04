@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>id 와 class 선택자에 대한 의견</title>
+    <link rel="stylesheet" href="id&class.css">
+</head>
+
+<!--id 선택자의 경우 문서내에 유일해야 된다.-->
+<!--그렇기 때문에 해당 이벤트나 스타일이 단 한 번만 사용하게 될 것인지 충분히 고민하라는 얘기이다.-->
+
+<!--반면 class 의 경우 class="a b c" 으로 중복 사용이 용이하다.-->
+<div>
+
+    <body>
+        <div id="main_00">id,,</div>
+        <div class="main_01 main_02">class,,</div>
+    </body>
+</div>
+</html>
