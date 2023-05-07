@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>position: absolute 와 position: relative 의 관계</title>
+    <link rel="stylesheet" href="absolute&relative.css">
+</head>
+
+<!--일반 position 의 값은 static 으로 각 각 본인의 자리 값을 가짐-->
+<div class="main_00">
+
+    <body>
+        <div class="01">frist</div>
+        <div class="02">second</div>
+        <div class="03">third</div>
+    </body>
+</div>
+
+<!--여기서 second 만 absolute 를 주게된다면-->
+<!--다른 position 들은 기본이 static 이기 때문에 변함이 없다.-->
+<!--그러나 3차원 좌표 축에서 second 는 다른 층에 있기 때문에 혼자 겹쳐 움직이는 것.-->
+
+<!--absolute 가 자리를 배치하는 기준은-->
+<!--1. 가장 가까운 위치 지성 조상 요소에 대해 상대적으로 배치.-->
+<!--2. 조상 중 위치 지정 요소가 없다면 초기 컨테이닝 블록을 기준으로 배치.-->
+<br><br><br><br>
+<div class="main_01">
+
+    <body>
+        <div class="01">frist</div>
+        <div class="main_01_box_02">second</div>
+        <div class="03">third</div>
+    </body>
+</div>
+
+<!--third 를 second 의 자식으로 포함시킬 수도 있다.-->
+<!--부모 요소가 움직이면 자식도 같이 움직이기 때문에 third 도 같이 움직인다.-->
+<br><br><br><br>
+<div class="main_01">
+
+    <body>
+        <div class="01">frist</div>
+        <div class="main_01_box_02">second
+            <div class="main_01_box_03">third</div>
+        </div>
+    </body>
+</div>
+
+<!--여기서 position relative 가 포함된다면,-->
+<!--third 는 자신의 부모인 second 가 가지는 position: relative 에 따라-->
+<!--second 를 기준으로 top, left, bottom, right 의 값을 지정받아 움직인다.-->
+<br><br><br><br>
+<div class="main_02">
+
+    <body>
+        <div class="01">(relative 포함)frist</div>
+        <div class="box_02">(relative 포함)second
+            <div class="box_03">(relative 포함)third</div>
+        </div>
+    </body>
+</div>
+
+<!--부모요소가 position relative 를 가지지 않을 때 하고 비교할 것.-->
+<br><br><br><br>
+<div class="main_03">
+
+    <body>
+        <div class="01">(relative 미포함)frist</div>
+        <div class="box_04">(relative 미포함)second
+            <div class="box_05">(relative 미포함)third</div>
+        </div>
+    </body>
+</div>
+
+</html>

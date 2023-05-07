@@ -1,0 +1,41 @@
+div {
+    border: 1px solid blue;
+}
+
+.main_01_box_02 {
+    position: absolute;
+    top: 10;
+    left: 10;
+}
+
+
+/*여기서부터 비교*/
+
+.main_02 {}
+
+.box_02 {
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.box_03 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.main_03 {
+    border: 3px solid green;
+}
+
+.box_04 {
+    top: 200px;
+    left: 100px;
+}
+
+.box_05 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
