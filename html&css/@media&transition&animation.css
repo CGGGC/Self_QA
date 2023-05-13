@@ -1,0 +1,68 @@
+/*기본값&box_01 은 transition 적용을 하지 않음*/
+.box_01 {
+    width: 500px;
+    height: 500px;
+
+    background-color: rgb(109, 109, 204);
+
+}
+
+/*box_02 는 transition 을 적용시킴*/
+.box_02 {
+    width: 500px;
+    height: 500px;
+
+    margin-top: 200px;
+
+    background-color: rgb(109, 109, 204);
+}
+
+/*transition 적용 비교*/
+/*screen 크기가 1024 이하일 때 적용*/
+@media screen and (max-width: 1024px) {
+    .box_01 {
+        width: 250px;
+        height: 250px;
+
+        background-color: rgb(12, 12, 65);
+
+        border-radius: 50%;
+    }
+
+    /*동시에 다중 클래스 적용 가능*/
+    .box_02 {
+        width: 250px;
+        height: 250px;
+
+        background-color: rgb(12, 12, 65);
+
+        border-radius: 50%;
+
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+
+        transform: rotate(180deg);
+    }
+}
+
+/*스크린 크기가 1025 이상일 때 적용*/
+@media screen and (min-width: 1025px) {
+    .box_01 {
+        width: 500px;
+        height: 500px;
+
+        background-color: rgb(109, 109, 204);
+    }
+
+    .box_02 {
+        width: 500px;
+        height: 500px;
+
+        background-color: rgb(109, 109, 204);
+
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+
+        transform: rotate(180deg);
+    }
+}
