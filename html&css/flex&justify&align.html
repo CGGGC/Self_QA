@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction & justify-content 의 차이점?</title>
+    <title>flex-wrap & align-items 의 차이점?</title>
+    <link rel="stylesheet" href="flex&justify&align.css">
+</head>
+
+<!--flex-direction 은 2차원 평면상 가상의 x,y 축의 직접적인 진행 방향을 설정하는 것이다.-->
+<!--즉 각 박스의 기본적인 x 좌표 정렬 기준을 설정해준다고 생각하면 된다.-->
+<!--그러나, 헷갈렸던 justify-content 는 '이미 설정된 x 좌표의 축을 기준으로' 박스의 진행 방향을 설정한다.-->
+<!--즉 x 좌표가 reverse 되어있으면 justify-content: flex-start 는 reverse 되어 있는 방향 그대로 우측에서 좌측으로 진행하며,-->
+<!--ex) 5 | 4 | 3 | 2 | 1 |-->
+<!--x 좌표가 정방향이면 justify-content: flex-start 는 정방향 그대로 좌측에서 우측으로 진행한다.-->
+<!--ex) 1 | 2 | 3 | 4 | 5 |-->
+
+<!--이는 align-items 도 마찬가지의 논리적 구조를 가진다.-->
+<div class="p_box_01">
+
+    <body>
+
+        <div class="c_box_01">1</div>
+        <div class="c_box_02">2</div>
+    </body>
+</div>
+
+</html>

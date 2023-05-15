@@ -1,0 +1,19 @@
+.p_box_01 {
+    display: flex;
+    text-align: center;
+    color: white;
+
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.p_box_01 [class*=c_box] {
+    background-color: rgb(86, 86, 196);
+
+    width: 200px;
+    height: 100px;
+
+    border: 1px solid white;
+
+    margin: 1px 1px;
+}
