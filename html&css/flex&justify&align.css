@@ -17,3 +17,26 @@
 
     margin: 1px 1px;
 }
+
+.p_box_02 {
+    display: flex;
+    text-align: center;
+    color: white;
+
+    height: 500px;
+
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
+
+.p_box_02 [class*=c_box] {
+    background-color: rgb(25, 25, 70);
+
+    width: 200px;
+    height: 100px;
+
+    border: 1px solid white;
+
+    margin: 1px 1px;
+}
