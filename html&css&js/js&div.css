@@ -1,0 +1,9 @@
+/*이 함수에서의 div만 css 적용*/
+.box_01 div {
+    /*display: inline-block;*/
+    /*글씨의 너비에 맞추고 싶다면 inline-block 적용*/
+    border: 1px solid white;
+    background-color: rgb(101, 101, 209);
+
+    color: white;
+}
