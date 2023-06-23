@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외부js파일에서 결과값을 받았을 때 외부 css를 적용시키는 법</title>
+    <link rel="stylesheet" href="외부 js 값에 외부 css 적용.css">
+    <script src="외부 js 값에 외부 css 적용.js"></script>
+</head>
+<body>
+    <!-- script 에다가 id&class 을 적용시켜 css 에서 살을 붙이는게 아닌-->
+    <!-- <script></script> 를 감싸주는 <div> 등 이 필요-->
+    <!-- 이 div 에 id&class 를 적용시켜 외부 js 파일의 결과값을 css 으로 변경이 가능함-->
+    <div class="css"><script>test_01()</script></div>
+</body>
+</html>
